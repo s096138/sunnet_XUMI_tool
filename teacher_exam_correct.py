@@ -1,0 +1,163 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import (
+    TimeoutException,
+    NoSuchElementException,
+    ElementClickInterceptedException,
+    StaleElementReferenceException,
+    ElementNotInteractableException,
+    WebDriverException
+)
+from menu_expanded import menu_expanded
+from selenium import webdriver
+import time
+import os
+
+download_directory = "c:\\Users\\SGQA2\\Downloads"
+options = webdriver.ChromeOptions()
+prefs = {
+    "download.default_directory": download_directory,
+    "download.prompt_for_download": False,
+    "download.directory_upgrade": True,
+    "safebrowsing.enabled": False,  # 允許不安全下載
+
+}
+options.add_experimental_option("prefs", prefs)
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--disable-extensions')
+options.add_argument('--disable-gpu')
+options.add_argument('--disable-blink-features=AutomationControlled')
+
+def get_downloaded_files(directory):
+    return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+
+def teacher_exam_correct(driver):
+    try:
+        print("測試：辦公室-測驗管理-試卷批改")
+        menu_expanded(driver, "測驗管理", "試卷批改")
+        time.sleep(2)
+        if "測驗一" in driver.page_source and "改完" in driver.page_source:
+            print("\033[32m進入試卷批改成功\033[0m")
+        else:
+            print("\033[31m進入試卷批改失敗\033[0m")
+
+        # 批改
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "(//input[@value='批改'])[1]"))
+        ).click()        
+        time.sleep(5)
+        if "請點選左側所列學員" in driver.page_source:
+            print("\033[32m進入批改成功\033[0m")
+        else:
+            print("\033[31m進入批改失敗\033[0m")
+
+        # 回列表
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "#menu6 > .nav-item:nth-child(4) span:nth-child(2)"))
+        ).click()
+
+        # 統計資料
+        time.sleep(2)
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "(//input[@value='檢視'])[1]"))
+        ).click()
+        time.sleep(2)
+        if "統計表" in driver.page_source:
+            print("\033[32m進入統計資料成功\033[0m")
+        else:
+            print("\033[31m進入統計資料失敗\033[0m")
+
+        # 匯出
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='匯出']"))
+        ).click() 
+        initial_files = get_downloaded_files(download_directory)
+        time.sleep(2) 
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='htm']"))
+        ).click()                
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='xml']"))
+        ).click()         
+        # WebDriverWait(driver, 20).until(
+        #     EC.element_to_be_clickable((By.XPATH, "//input[@value='mht']"))
+        # ).click() 
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'匯出')]"))
+        ).click() 
+        time.sleep(5)
+        final_files = get_downloaded_files(download_directory)
+        if len(final_files) > len(initial_files):
+            print("\033[32m統計資料下載成功\033[0m")
+        else:
+            print("\033[31m統計資料下載失敗\033[0m")
+
+        # 詳細資料
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//td[@class='cssTrHead']//input[@value='詳細資料']"))
+        ).click()        
+        time.sleep(2)
+        if "序號" in driver.page_source:
+            print("\033[32m進入詳細資料成功\033[0m")
+        else:
+            print("\033[31m進入詳細資料失敗\033[0m")
+
+        # 匯出
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='匯出']"))
+        ).click() 
+        initial_files = get_downloaded_files(download_directory)
+        time.sleep(2) 
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='htm']"))
+        ).click()                
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//input[@value='xml']"))
+        ).click()         
+        # WebDriverWait(driver, 20).until(
+        #     EC.element_to_be_clickable((By.XPATH, "//input[@value='mht']"))
+        # ).click() 
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'匯出')]"))
+        ).click() 
+        time.sleep(5)
+        final_files = get_downloaded_files(download_directory)
+        if len(final_files) > len(initial_files):
+            print("\033[32m詳細資料下載成功\033[0m")
+        else:
+            print("\033[31m詳細資料下載失敗\033[0m")
+
+        # 回列表
+        WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, '//input[@value="回列表"]'))
+        ).click()
+        time.sleep(2)
+        if "檢視" in driver.page_source:
+            print("\033[32m回列表成功\033[0m")
+        else:
+            print("\033[31m回列表失敗\033[0m")
+
+    except TimeoutException as e:
+        print(f"等待元素可點擊超時: {e}")
+        return
+    except NoSuchElementException as e:
+        print(f"未找到元素: {e}")
+        return
+    except ElementClickInterceptedException as e:
+        print(f"無法點擊該元素: {e}")
+        return
+    except StaleElementReferenceException as e:
+        print(f"元素已不再可用: {e}")
+        return
+    except ElementNotInteractableException as e:
+        print(f"元素不可互動: {e}")
+        return
+    except WebDriverException as e:
+        print(f"WebDriver 錯誤: {e}")
+        return
+    except Exception as e:
+        print(f"發生未預期的錯誤: {e}")
+        return
