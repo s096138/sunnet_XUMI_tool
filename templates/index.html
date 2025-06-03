@@ -349,13 +349,41 @@
                                     '<span class="badge bg-danger">失敗</span>',
                                 '</p>',
                                 '<hr>',
-                                '<h6>測試輸出：</h6>',
-                                '<div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; white-space: pre; overflow-x: auto;">',
+                                '<div class="d-flex justify-content-between align-items-center mb-2">',
+                                '    <h6 class="mb-0">測試輸出：</h6>',
+                                '    <button id="downloadOutput" class="btn btn-sm btn-outline-secondary p-0" style="width: 60px; display: flex; align-items: center; justify-content: center; gap: 2px;">',
+                                '        <i class="bi bi-download"></i><span>下載</span>',
+                                '    </button>',
+                                '</div>',
+                                '<div id="outputContent" style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; white-space: pre; overflow-x: auto;">',
                                 formattedOutput,
                                 '</div>',
                                 '</div>'
                             ].join('');
                             $('#historyOutput').html(html);
+                            
+                            // 添加下載按鈕點擊事件
+                            $('#downloadOutput').click(function() {
+                                const content = $('#outputContent').text();
+                                const timestamp = response.timestamp.replace(/[:.]/g, '-').replace(' ', '_');
+                                const filename = `自動化測試_${timestamp}.txt`;
+                                
+                                const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                                const url = URL.createObjectURL(blob);
+                                
+                                const a = document.createElement('a');
+                                a.href = url;
+                                a.download = filename;
+                                document.body.appendChild(a);
+                                a.click();
+                                
+                                // 清理
+                                setTimeout(() => {
+                                    document.body.removeChild(a);
+                                    window.URL.revokeObjectURL(url);
+                                }, 0);
+                            });
+                            
                             $('#historyDetail').show();
                             // 滾動到詳情區域
                             $('html, body').animate({
