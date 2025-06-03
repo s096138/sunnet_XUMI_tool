@@ -126,7 +126,7 @@ def main():
     print(f"\033[34m測試帳號：{os.getenv('XUMI_USERNAME')}\033[0m")
     driver = initialize_driver()
 
-    # test_login(driver) #登入
+    test_login(driver) #登入
     time.sleep(5)
     # preparation(driver) #測試帳號建置
     # test_prepare(driver) # 首頁資料建置
@@ -139,8 +139,8 @@ def main():
     # test_download(driver) #下載專區
     # test_featured_courses(driver) #精選課程
     # test_other_sites(driver) #相關網站連結
-    test_security_policy(driver) #資訊安全政策
-    test_privacy_policy(driver) #隱私權宣告
+    # test_security_policy(driver) #資訊安全政策
+    # test_privacy_policy(driver) #隱私權宣告
     # test_footer(driver) # 頁尾分享
     # test_my_schedule(driver) #我的課表
     # test_study_record(driver) #學習紀錄

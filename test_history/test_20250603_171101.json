@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-03 17:11:01",
+  "target_url": "https://xumi-demo9.sun.net.tw",
+  "selected_tests": [
+    "test_login"
+  ],
+  "output": "\u001b[34m測試時間：2025-06-03 17:10\u001b[0m\n\u001b[34m測試帳號：joy09\u001b[0m\n\u001b[34m測試站台：https://xumi-demo9.sun.net.tw\u001b[0m\n測試：首頁-登入\nWebDriver 錯誤: Message: invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=137.0.7151.55)\nStacktrace:\n\tGetHandleVerifier [0x0x4d3763+63299]\n\tGetHandleVerifier [0x0x4d37a4+63364]\n\t(No symbol) [0x0x301113]\n\t(No symbol) [0x0x2f08a0]\n\t(No symbol) [0x0x30e8c2]\n\t(No symbol) [0x0x37519c]\n\t(No symbol) [0x0x38f359]\n\t(No symbol) [0x0x36e376]\n\t(No symbol) [0x0x33d6e0]\n\t(No symbol) [0x0x33e544]\n\tGetHandleVerifier [0x0x72e033+2531347]\n\tGetHandleVerifier [0x0x729332+2511634]\n\tGetHandleVerifier [0x0x4f9eda+220858]\n\tGetHandleVerifier [0x0x4ea528+156936]\n\tGetHandleVerifier [0x0x4f0c5d+183357]\n\tGetHandleVerifier [0x0x4db6c8+95912]\n\tGetHandleVerifier [0x0x4db870+96336]\n\tGetHandleVerifier [0x0x4c664a+9770]\n\tBaseThreadInitThunk [0x0x754bfcc9+25]\n\tRtlGetAppContainerNamedObjectPath [0x0x76f182ae+286]\n\tRtlGetAppContainerNamedObjectPath [0x0x76f1827e+238]\n\n",
+  "success": false
+}

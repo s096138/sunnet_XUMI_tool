@@ -513,12 +513,42 @@ def run_tests():
             
             # 保存測試結果到歷史紀錄
             try:
+                # 檢查測試是否成功：
+                # 1. 沒有標準錯誤輸出，或標準錯誤中不包含錯誤關鍵字
+                # 2. 返回碼為0
+                stderr_content = stderr_buffer.getvalue().strip()
+                stdout_content = stdout_buffer.getvalue().strip()
+                
+                # 檢查標準輸出中是否包含失敗訊息
+                has_failure_in_stdout = ('fail' in stdout_content.lower() or 
+                                      'error' in stdout_content.lower() or 
+                                      'exception' in stdout_content.lower())
+                
+                has_error_output = bool(stderr_content and 
+                                     ('error' in stderr_content.lower() or 
+                                      'fail' in stderr_content.lower() or
+                                      'exception' in stderr_content.lower()))
+                
+                # 檢查輸出中是否包含 'WebDriver 錯誤' 字樣
+                has_webdriver_error = ('webdriver 錯誤' in stdout_content.lower() or 
+                                     'webdriver 錯誤' in stderr_content.lower())
+                
+                # 如果有 WebDriver 錯誤，則測試失敗
+                test_success = (not has_error_output and 
+                              not has_failure_in_stdout and 
+                              not has_webdriver_error and 
+                              returncode == 0)
+                
+                logger.info(f"測試成功狀態: {test_success}, 返回碼: {returncode}, "
+                           f"錯誤輸出: {bool(stderr_content)}, 標準輸出包含失敗: {has_failure_in_stdout}")
+                
+                # 保存原始輸出，不包含 HTML 標籤
                 history_entry = {
                     'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     'target_url': target_url,
                     'selected_tests': selected_tests,
-                    'output': output,
-                    'success': success
+                    'output': stdout_buffer.getvalue() or stderr_buffer.getvalue(),
+                    'success': test_success
                 }
                 filename = f"test_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
                 with open(os.path.join(HISTORY_DIR, filename), 'w', encoding='utf-8') as f:
@@ -529,7 +559,7 @@ def run_tests():
             
             # 返回測試結果
             result = {
-                'success': success,
+                'success': test_success,  # 使用計算出的 test_success
                 'output': output,
                 'stdout': ansi_to_html(stdout_buffer.getvalue()),
                 'stderr': ansi_to_html(stderr_buffer.getvalue()),
@@ -563,10 +593,19 @@ def run_tests():
 @app.route('/get_test_history', methods=['GET'])
 def get_test_history():
     try:
+        # 獲取分頁參數，如果沒有提供則使用默認值
+        page = int(request.args.get('page', 1))
+        per_page = int(request.args.get('per_page', 5))  # 每頁顯示5筆
+        
         history_files = sorted(os.listdir(HISTORY_DIR), reverse=True)
         history = []
         
-        for filename in history_files:
+        # 計算分頁的起始和結束索引
+        start_idx = (page - 1) * per_page
+        end_idx = start_idx + per_page
+        
+        # 只處理當前頁需要的檔案
+        for filename in history_files[start_idx:end_idx]:
             if not filename.endswith('.json'):
                 continue
                 
@@ -582,8 +621,21 @@ def get_test_history():
                     })
                 except json.JSONDecodeError:
                     continue
+        
+        # 計算總頁數
+        total_items = len([f for f in history_files if f.endswith('.json')])
+        total_pages = (total_items + per_page - 1) // per_page
                     
-        return jsonify({'success': True, 'history': history})
+        return jsonify({
+            'success': True, 
+            'history': history,
+            'pagination': {
+                'current_page': page,
+                'per_page': per_page,
+                'total_items': total_items,
+                'total_pages': total_pages
+            }
+        })
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
 

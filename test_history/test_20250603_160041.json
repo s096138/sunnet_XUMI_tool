@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-03 16:00:41",
+  "target_url": "https://xumi-demo9.sun.net.tw",
+  "selected_tests": [
+    "preparation"
+  ],
+  "output": "\u001b[34m測試時間：2025-06-03 16:00\u001b[0m\n\u001b[34m測試帳號：joy09\u001b[0m\n\u001b[34m測試站台：https://xumi-demo9.sun.net.tw\u001b[0m\n",
+  "success": true
+}

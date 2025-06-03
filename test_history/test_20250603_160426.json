@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-03 16:04:26",
+  "target_url": "https://xumi-demo9.sun.net.tw",
+  "selected_tests": [
+    "test_study_record"
+  ],
+  "output": "\u001b[34m測試時間：2025-06-03 16:04\u001b[0m\n\u001b[34m測試帳號：joy09\u001b[0m\n\u001b[34m測試站台：https://xumi-demo9.sun.net.tw\u001b[0m\n測試：首頁-會員專區-學習紀錄\n發生未預期的錯誤: 'NoneType' object has no attribute 'is_displayed'\n",
+  "success": true
+}
