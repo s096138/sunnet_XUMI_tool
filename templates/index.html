@@ -28,7 +28,7 @@
             margin-top: 20px;
         }
         .test-category {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             border-radius: 5px;
             max-height: 300px;
             overflow-y: auto;
@@ -36,6 +36,74 @@
         .test-item {
             padding: 0.5rem 1rem;
             border-bottom: 1px solid #e9ecef;
+        }
+        
+        /* 重置所有 checkbox 樣式 */
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #6c757d;
+            border-radius: 3px;
+            margin: 0 8px 0 8px;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        /* 勾選狀態 */
+        input[type="checkbox"]:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        
+        /* 勾選圖標 */
+        input[type="checkbox"]:checked::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 1px;
+            width: 4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        
+        /* 分類標題的 checkbox 特別處理 */
+        .accordion-button input[type="checkbox"] {
+            margin: 0 8px 0 8px;
+            align-self: center;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 3px !important;
+        }
+        
+        /* 調整分類標題的文字對齊 */
+        .accordion-button {
+            padding-left: 0.5rem;
+            background-color: #ffffff;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #ffffff !important;
+            color: #212529;
+            box-shadow: none;
+        }
+        
+        /* 移除 Bootstrap 的預設樣式 */
+        .form-check-input:checked[type=checkbox] {
+            background-image: none;
+        }
+        
+        /* 確保自定義 checkbox 樣式 */
+        .form-check-input[type="checkbox"]:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
         }
         .test-item:last-child {
             border-bottom: none;
@@ -112,22 +180,28 @@
                     
                     <div class="accordion" id="testAccordion">
                         {% for category in categories %}
+                        {% set category_loop_index = loop.index %}
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading{{ loop.index }}">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                        data-bs-target="#collapse{{ loop.index }}" aria-expanded="false" 
-                                        aria-controls="collapse{{ loop.index }}">
-                                    {{ category.name }} ({{ category.items_count }})
-                                </button>
+                            <h2 class="accordion-header" id="heading{{ category_loop_index }}">
+                                <div class="d-flex align-items-center w-100">
+                                    <input class="category-checkbox" type="checkbox" 
+                                           data-category="category-{{ category_loop_index }}" id="category-{{ category_loop_index }}">
+                                    <button class="accordion-button collapsed flex-grow-1" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse{{ category_loop_index }}" aria-expanded="false" 
+                                            aria-controls="collapse{{ category_loop_index }}">
+                                        {{ category.name }} ({{ category.items_count }})
+                                    </button>
+                                </div>
                             </h2>
-                            <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" 
-                                 aria-labelledby="heading{{ loop.index }}" data-bs-parent="#testAccordion">
+                            <div id="collapse{{ category_loop_index }}" class="accordion-collapse collapse" 
+                                 aria-labelledby="heading{{ category_loop_index }}" data-bs-parent="#testAccordion">
                                 <div class="accordion-body p-0">
                                     <div class="test-category p-3">
                                         {% for test, display_name in category['items'] %}
                                         <div class="form-check test-item">
                                             <input class="form-check-input test-checkbox" type="checkbox" 
-                                                   value="{{ test }}" id="test-{{ category.id }}-{{ loop.index }}">
+                                                   value="{{ test }}" id="test-{{ category.id }}-{{ loop.index }}"
+                                                   data-category="category-{{ category_loop_index }}">
                                             <label class="form-check-label" for="test-{{ category.id }}-{{ loop.index }}">
                                                 {{ display_name }}
                                             </label>
@@ -355,7 +429,7 @@
                                 '        <i class="bi bi-download"></i><span>下載</span>',
                                 '    </button>',
                                 '</div>',
-                                '<div id="outputContent" style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; white-space: pre; overflow-x: auto;">',
+                                '<div id="outputContent" style="background-color: #ffffff; padding: 10px; border-radius: 5px; white-space: pre; overflow-x: auto; border: 1px solid #dee2e6;">',
                                 formattedOutput,
                                 '</div>',
                                 '</div>'
@@ -413,7 +487,25 @@
             });
             
             // 當複選框狀態改變時更新計數
+            // 分類全選/取消全選功能
+            $(document).on('change', '.category-checkbox', function(e) {
+                e.stopPropagation(); // 防止觸發折疊/展開
+                const categoryId = $(this).attr('id');
+                const isChecked = $(this).prop('checked');
+                
+                // 選取或取消選取該分類下的所有測試項目
+                $(`input.test-checkbox[data-category="${categoryId}"]`).prop('checked', isChecked);
+                updateSelectedCount();
+            });
+            
+            // 當單個測試項目被點擊時，檢查是否需要更新分類的 checkbox 狀態
             $(document).on('change', '.test-checkbox', function() {
+                const categoryId = $(this).data('category');
+                const $categoryCheckbox = $(`#${categoryId}`);
+                const $categoryCheckboxes = $(`.test-checkbox[data-category="${categoryId}"]`);
+                const allChecked = $categoryCheckboxes.length === $categoryCheckboxes.filter(':checked').length;
+                
+                $categoryCheckbox.prop('checked', allChecked);
                 updateSelectedCount();
             });
             
