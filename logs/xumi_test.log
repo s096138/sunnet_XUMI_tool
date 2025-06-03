@@ -1,0 +1,690 @@
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo10.sun.net.tw
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw, TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 更新測試函數註解狀態，共 1 個測試被選中
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 13:46:37 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:46:38 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:46:38 - XUMI_TEST - DEBUG - 讀取環境變數: TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw, TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 更新測試函數註解狀態，共 1 個測試被選中
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 13:46:38 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:49:56 - XUMI_TEST - DEBUG - 讀取環境變數: TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw, TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:49:56 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:49:56 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 13:50:12 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 13:50:12 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 13:49[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo10.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+
+2025-06-03 13:50:12 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:50:12 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '\x1b[34m測試時間：2025-06-03 13:49\x1b[0m\n\x1b[34m測試帳號：joy09\x1b[0m\n\x1b[34m測試站台：https://xumi-demo10.sun.net.tw\x1b[0m\n測試：首頁-登入\n\x1b[32m輸入密碼成功\x1b[0m\n\x1b[32m未輸入帳號不可進行登入\x1b[0m\n\x1b[32m帳號欄位必填訊息顯示正確\x1b[0m\n\x1b[32m輸入帳號成功\x1b[0m\n\x1b[32m登入成功\x1b[0m\n', 'stderr': '', 'returncode': 0}
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:51:33 - XUMI_TEST - DEBUG - 讀取環境變數: TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw, TARGET_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:51:33 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:51:33 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:51:34 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 13:51:48 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 13:51:48 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 13:51[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+
+2025-06-03 13:51:48 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:51:48 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '\x1b[34m測試時間：2025-06-03 13:51\x1b[0m\n\x1b[34m測試帳號：joy09\x1b[0m\n\x1b[34m測試站台：https://xumi-demo9.sun.net.tw\x1b[0m\n測試：首頁-登入\n\x1b[32m輸入密碼成功\x1b[0m\n\x1b[32m未輸入帳號不可進行登入\x1b[0m\n\x1b[32m帳號欄位必填訊息顯示正確\x1b[0m\n\x1b[32m輸入帳號成功\x1b[0m\n\x1b[32m登入成功\x1b[0m\n', 'stderr': '', 'returncode': 0}
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:55:38 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:55:38 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:55:38 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:55:39 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 13:55:52 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 13:55:52 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 13:55[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+
+2025-06-03 13:55:52 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:55:52 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 13:55</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-登入<br><span style="color: green">輸入密碼成功</span><br><span style="color: green">未輸入帳號不可進行登入</span><br><span style="color: green">帳號欄位必填訊息顯示正確</span><br><span style="color: green">輸入帳號成功</span><br><span style="color: green">登入成功</span><br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:56:54 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:56:54 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:56:54 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 13:56:59 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 13:56:59 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 13:56[0m
+[34m測試帳號：joy09[0m
+測試：首頁-登入
+WebDriver 錯誤: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+	GetHandleVerifier [0x0x4d3763+63299]
+	GetHandleVerifier [0x0x4d37a4+63364]
+	(No symbol) [0x0x301113]
+	(No symbol) [0x0x2f08a0]
+	(No symbol) [0x0x30e8c2]
+	(No symbol) [0x0x37519c]
+	(No symbol) [0x0x38f359]
+	(No symbol) [0x0x36e376]
+	(No symbol) [0x0x33d6e0]
+	(No symbol) [0x0x33e544]
+	GetHandleVerifier [0x0x72e033+2531347]
+	GetHandleVerifier [0x0x729332+2511634]
+	GetHandleVerifier [0x0x4f9eda+220858]
+	GetHandleVerifier [0x0x4ea528+156936]
+	GetHandleVerifier [0x0x4f0c5d+183357]
+	GetHandleVerifier [0x0x4db6c8+95912]
+	GetHandleVerifier [0x0x4db870+96336]
+	GetHandleVerifier [0x0x4c664a+9770]
+	BaseThreadInitThunk [0x0x754bfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x76f182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x76f1827e+238]
+
+
+2025-06-03 13:56:59 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:56:59 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 13:56</span><br><span style="color: blue">測試帳號：joy09</span><br>測試：首頁-登入<br>WebDriver 錯誤: Message: invalid session id: session deleted as the browser has closed the connection<br>from disconnected: not connected to DevTools<br>  (Session info: chrome=137.0.7151.55)<br>Stacktrace:<br>\tGetHandleVerifier [0x0x4d3763+63299]<br>\tGetHandleVerifier [0x0x4d37a4+63364]<br>\t(No symbol) [0x0x301113]<br>\t(No symbol) [0x0x2f08a0]<br>\t(No symbol) [0x0x30e8c2]<br>\t(No symbol) [0x0x37519c]<br>\t(No symbol) [0x0x38f359]<br>\t(No symbol) [0x0x36e376]<br>\t(No symbol) [0x0x33d6e0]<br>\t(No symbol) [0x0x33e544]<br>\tGetHandleVerifier [0x0x72e033+2531347]<br>\tGetHandleVerifier [0x0x729332+2511634]<br>\tGetHandleVerifier [0x0x4f9eda+220858]<br>\tGetHandleVerifier [0x0x4ea528+156936]<br>\tGetHandleVerifier [0x0x4f0c5d+183357]<br>\tGetHandleVerifier [0x0x4db6c8+95912]<br>\tGetHandleVerifier [0x0x4db870+96336]<br>\tGetHandleVerifier [0x0x4c664a+9770]<br>\tBaseThreadInitThunk [0x0x754bfcc9+25]<br>\tRtlGetAppContainerNamedObjectPath [0x0x76f182ae+286]<br>\tRtlGetAppContainerNamedObjectPath [0x0x76f1827e+238]<br><br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 13:57:21 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 13:57:21 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:57:21 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 13:57:22 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 13:57:35 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 13:57:35 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 13:57[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+
+2025-06-03 13:57:35 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 13:57:35 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 13:57</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-登入<br><span style="color: green">輸入密碼成功</span><br><span style="color: green">未輸入帳號不可進行登入</span><br><span style="color: green">帳號欄位必填訊息顯示正確</span><br><span style="color: green">輸入帳號成功</span><br><span style="color: green">登入成功</span><br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login']}
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login']
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:01:18 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:01:18 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:01:18 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:01:32 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:01:32 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 14:01[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+
+2025-06-03 14:01:32 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:01:32 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:01</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-登入<br><span style="color: green">輸入密碼成功</span><br><span style="color: green">未輸入帳號不可進行登入</span><br><span style="color: green">帳號欄位必填訊息顯示正確</span><br><span style="color: green">輸入帳號成功</span><br><span style="color: green">登入成功</span><br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo10.sun.net.tw', 'selected_tests': ['test_login', 'test_calendar']}
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 目標網址: https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_calendar']
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 已取消註解: test_calendar
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:02:17 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo10.sun.net.tw', 'selected_tests': ['test_login', 'test_calendar']}
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 目標網址: https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_calendar']
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:02:17 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo10.sun.net.tw
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 已取消註解: test_calendar
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:02:17 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login', 'test_calendar']}
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_calendar']
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo10.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 已取消註解: test_calendar
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login', 'test_calendar']}
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 目標網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_calendar']
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:04:14 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:04:14 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:04:14 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:04:15 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:05:42 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:05:42 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 14:04[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+測試：首頁-會員專區-行事曆
+[32m進入行事曆成功[0m
+[32m今日日期顯示正確[0m
+[32m切換上個月成功[0m
+[32m切換上上個月成功[0m
+[32m切換下個月成功[0m
+[32m切換今天成功[0m
+[32m新增單一事件成功[0m
+[32m右側列表正確顯示事件資訊[0m
+[32m編輯單一事件成功[0m
+[32m刪除單一事件成功[0m
+[32m新增週期事件成功[0m
+[32m右側列表正確顯示事件資訊[0m
+[32m編輯週期事件成功[0m
+[32m刪除週期事件成功[0m
+
+2025-06-03 14:05:42 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:05:42 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:04</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-登入<br><span style="color: green">輸入密碼成功</span><br><span style="color: green">未輸入帳號不可進行登入</span><br><span style="color: green">帳號欄位必填訊息顯示正確</span><br><span style="color: green">輸入帳號成功</span><br><span style="color: green">登入成功</span><br>測試：首頁-會員專區-行事曆<br><span style="color: green">進入行事曆成功</span><br><span style="color: green">今日日期顯示正確</span><br><span style="color: green">切換上個月成功</span><br><span style="color: green">切換上上個月成功</span><br><span style="color: green">切換下個月成功</span><br><span style="color: green">切換今天成功</span><br><span style="color: green">新增單一事件成功</span><br><span style="color: green">右側列表正確顯示事件資訊</span><br><span style="color: green">編輯單一事件成功</span><br><span style="color: green">刪除單一事件成功</span><br><span style="color: green">新增週期事件成功</span><br><span style="color: green">右側列表正確顯示事件資訊</span><br><span style="color: green">編輯週期事件成功</span><br><span style="color: green">刪除週期事件成功</span><br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login', 'test_security_policy']}
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_security_policy']
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:29:47 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 已取消註解: test_security_policy
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 已加上註解: test_calendar
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:29:47 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:29:48 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_login', 'test_security_policy']}
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 選擇的測試項目: ['test_login', 'test_security_policy']
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:29:48 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:29:48 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:29:49 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:29:49 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:29:49 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:30:11 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:30:11 - XUMI_TEST - ERROR - 執行測試時發生異常: name 'output' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 478, in run_tests
+    'output': output,
+              ^^^^^^
+NameError: name 'output' is not defined
+2025-06-03 14:30:11 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 14:29[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-登入
+[32m輸入密碼成功[0m
+[32m未輸入帳號不可進行登入[0m
+[32m帳號欄位必填訊息顯示正確[0m
+[32m輸入帳號成功[0m
+[32m登入成功[0m
+測試：首頁-資訊安全政策
+[32m滾動到資訊安全政策成功[0m
+[32m進入資訊安全政策成功[0m
+回首頁
+
+2025-06-03 14:30:11 - XUMI_TEST - ERROR - 測試標準錯誤:
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 478, in run_tests
+    'output': output,
+              ^^^^^^
+NameError: name 'output' is not defined
+
+
+2025-06-03 14:30:11 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:30:11 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': False, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:29</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-登入<br><span style="color: green">輸入密碼成功</span><br><span style="color: green">未輸入帳號不可進行登入</span><br><span style="color: green">帳號欄位必填訊息顯示正確</span><br><span style="color: green">輸入帳號成功</span><br><span style="color: green">登入成功</span><br>測試：首頁-資訊安全政策<br><span style="color: green">滾動到資訊安全政策成功</span><br><span style="color: green">進入資訊安全政策成功</span><br>回首頁<br></div>', 'stderr': '<div style="font-family: monospace; white-space: pre-wrap;">Traceback (most recent call last):<br>  File "C:\\Users\\SGQA2\\Desktop\\Windsurf\\sunnet_XUMI_tool\\app.py", line 478, in run_tests<br>    \'output\': output,<br>              ^^^^^^<br>NameError: name \'output\' is not defined<br><br></div>', 'returncode': 1}
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:30:45 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:30:45 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:30:45 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 已取消註解: test_privacy_policy
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 已加上註解: test_login
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:30:46 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:30:46 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:30:46 - XUMI_TEST - INFO - 準備執行測試...
+2025-06-03 14:30:47 - XUMI_TEST - WARNING - 清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:30:47 - XUMI_TEST - INFO - 導入 test_main 模組...
+2025-06-03 14:30:47 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:31:13 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:31:13 - XUMI_TEST - ERROR - 執行測試時發生異常: name 'output' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 478, in run_tests
+    'output': output,
+              ^^^^^^
+NameError: name 'output' is not defined
+2025-06-03 14:31:13 - XUMI_TEST - INFO - 測試標準輸出:
+[34m測試時間：2025-06-03 14:30[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-資訊安全政策
+[32m滾動到資訊安全政策成功[0m
+[32m進入資訊安全政策成功[0m
+回首頁
+測試：首頁-隱私權宣告
+[32m滾動到隱私權宣告成功[0m
+[32m進入隱私權宣告成功[0m
+回首頁
+
+2025-06-03 14:31:13 - XUMI_TEST - ERROR - 測試標準錯誤:
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 478, in run_tests
+    'output': output,
+              ^^^^^^
+NameError: name 'output' is not defined
+
+
+2025-06-03 14:31:13 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:31:13 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': False, 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:30</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-資訊安全政策<br><span style="color: green">滾動到資訊安全政策成功</span><br><span style="color: green">進入資訊安全政策成功</span><br>回首頁<br>測試：首頁-隱私權宣告<br><span style="color: green">滾動到隱私權宣告成功</span><br><span style="color: green">進入隱私權宣告成功</span><br>回首頁<br></div>', 'stderr': '<div style="font-family: monospace; white-space: pre-wrap;">Traceback (most recent call last):<br>  File "C:\\Users\\SGQA2\\Desktop\\Windsurf\\sunnet_XUMI_tool\\app.py", line 478, in run_tests<br>    \'output\': output,<br>              ^^^^^^<br>NameError: name \'output\' is not defined<br><br></div>', 'returncode': 1}
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:45:01 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:45:01 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:45:01 - XUMI_TEST - ERROR - 執行測試時發生未預期的錯誤: name 'StringIO' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 447, in run_tests
+    stdout_buffer = StringIO()
+                    ^^^^^^^^
+NameError: name 'StringIO' is not defined
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:45:24 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:45:24 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:45:24 - XUMI_TEST - ERROR - 執行測試時發生未預期的錯誤: name 'StringIO' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 448, in run_tests
+    stdout_buffer = StringIO()
+                    ^^^^^^^^
+NameError: name 'StringIO' is not defined
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:45:36 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:45:36 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:45:36 - XUMI_TEST - ERROR - 執行測試時發生未預期的錯誤: name 'StringIO' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 448, in run_tests
+    stdout_buffer = StringIO()
+                    ^^^^^^^^
+NameError: name 'StringIO' is not defined
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_other_sites', 'test_security_policy']}
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 選擇的測試項目: ['test_other_sites', 'test_security_policy']
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:46:02 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 已取消註解: test_other_sites
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 已加上註解: test_privacy_policy
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:46:02 - XUMI_TEST - ERROR - 執行測試時發生異常: name 'test_main' is not defined
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 462, in run_tests
+    test_main.main()
+    ^^^^^^^^^
+NameError: name 'test_main' is not defined
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 測試輸出:
+Traceback (most recent call last):
+  File "C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\app.py", line 462, in run_tests
+    test_main.main()
+    ^^^^^^^^^
+NameError: name 'test_main' is not defined
+
+
+2025-06-03 14:46:02 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 已保存測試結果到 test_20250603_144602.json
+2025-06-03 14:46:02 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': False, 'output': 'Traceback (most recent call last):\n  File "C:\\Users\\SGQA2\\Desktop\\Windsurf\\sunnet_XUMI_tool\\app.py", line 462, in run_tests\n    test_main.main()\n    ^^^^^^^^^\nNameError: name \'test_main\' is not defined\n\n', 'stdout': '', 'stderr': '<div style="font-family: monospace; white-space: pre-wrap;">Traceback (most recent call last):<br>  File "C:\\Users\\SGQA2\\Desktop\\Windsurf\\sunnet_XUMI_tool\\app.py", line 462, in run_tests<br>    test_main.main()<br>    ^^^^^^^^^<br>NameError: name \'test_main\' is not defined<br><br></div>', 'returncode': 1}
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:46:35 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 已取消註解: test_privacy_policy
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 已加上註解: test_other_sites
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 成功更新測試檔案
+2025-06-03 14:46:35 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:46:37 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:46:37 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:47:03 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:47:03 - XUMI_TEST - INFO - 測試輸出:
+[34m測試時間：2025-06-03 14:46[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-資訊安全政策
+[32m滾動到資訊安全政策成功[0m
+[32m進入資訊安全政策成功[0m
+回首頁
+測試：首頁-隱私權宣告
+[32m滾動到隱私權宣告成功[0m
+[32m進入隱私權宣告成功[0m
+回首頁
+
+2025-06-03 14:47:03 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:47:03 - XUMI_TEST - INFO - 已保存測試結果到 test_20250603_144703.json
+2025-06-03 14:47:03 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'output': '\x1b[34m測試時間：2025-06-03 14:46\x1b[0m\n\x1b[34m測試帳號：joy09\x1b[0m\n\x1b[34m測試站台：https://xumi-demo9.sun.net.tw\x1b[0m\n測試：首頁-資訊安全政策\n\x1b[32m滾動到資訊安全政策成功\x1b[0m\n\x1b[32m進入資訊安全政策成功\x1b[0m\n回首頁\n測試：首頁-隱私權宣告\n\x1b[32m滾動到隱私權宣告成功\x1b[0m\n\x1b[32m進入隱私權宣告成功\x1b[0m\n回首頁\n', 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:46</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-資訊安全政策<br><span style="color: green">滾動到資訊安全政策成功</span><br><span style="color: green">進入資訊安全政策成功</span><br>回首頁<br>測試：首頁-隱私權宣告<br><span style="color: green">滾動到隱私權宣告成功</span><br><span style="color: green">進入隱私權宣告成功</span><br>回首頁<br></div>', 'stderr': '', 'returncode': 0}
