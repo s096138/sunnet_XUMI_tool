@@ -596,8 +596,18 @@ def get_history_detail(filename):
             return jsonify({'success': False, 'error': 'File not found'})
             
         with open(filepath, 'r', encoding='utf-8') as f:
-            return jsonify({'success': True, 'data': json.load(f)})
+            data = json.load(f)
+            # 確保返回的數據結構與前端預期一致
+            return jsonify({
+                'success': True, 
+                'output': data.get('output', ''),
+                'target_url': data.get('target_url', ''),
+                'selected_tests': data.get('selected_tests', []),
+                'success_status': data.get('success', False),
+                'timestamp': data.get('timestamp', '')
+            })
     except Exception as e:
+        logger.error(f"獲取歷史紀錄詳情時發生錯誤: {str(e)}")
         return jsonify({'success': False, 'error': str(e)})
 
 if __name__ == '__main__':

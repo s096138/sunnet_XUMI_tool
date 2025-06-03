@@ -272,8 +272,103 @@
             const selectedCount = $('.test-checkbox:checked').length;
             $('#selectedCount').text(`已選擇 ${selectedCount} 項`);
         }
+
+        // 載入歷史紀錄
+        function loadHistory() {
+            $.ajax({
+                url: '/get_test_history',
+                type: 'GET',
+                success: function(response) {
+                    const tbody = $('#historyTableBody');
+                    tbody.empty();
+                    
+                    if (response.history && response.history.length > 0) {
+                        response.history.forEach(function(item) {
+                            const statusBadge = item.success ? 
+                                '<span class="badge bg-success">成功</span>' : 
+                                '<span class="badge bg-danger">失敗</span>';
+                            
+                            const row = `
+                                <tr data-filename="${item.filename}">
+                                    <td>${item.timestamp}</td>
+                                    <td>${item.target_url || 'N/A'}</td>
+                                    <td>${item.selected_tests ? item.selected_tests.join(', ') : 'N/A'}</td>
+                                    <td>${statusBadge}</td>
+                                    <td><button class="btn btn-sm btn-outline-primary view-detail">查看詳情</button></td>
+                                </tr>
+                            `;
+                            tbody.append(row);
+                        });
+                    } else {
+                        tbody.html('<tr><td colspan="5" class="text-center">沒有歷史紀錄</td></tr>');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('載入歷史紀錄失敗:', error);
+                    alert('載入歷史紀錄失敗: ' + error);
+                }
+            });
+        }
         
         $(document).ready(function() {
+            // 點擊歷史紀錄按鈕
+            $('#viewHistory').click(function() {
+                loadHistory();
+                $('#historyModal').modal('show');
+            });
+
+            // 將 ANSI 顏色代碼轉換為 HTML
+            function ansiToHtml(text) {
+                if (!text) return '';
+                // 替換 ANSI 顏色代碼
+                text = text.replace(/\x1b\[0m/g, '</span>');
+                text = text.replace(/\x1b\[34m/g, '<span style="color: blue">');
+                text = text.replace(/\x1b\[32m/g, '<span style="color: green">');
+                text = text.replace(/\x1b\[31m/g, '<span style="color: red">');
+                text = text.replace(/\x1b\[33m/g, '<span style="color: orange">');
+                return text;
+            }
+
+            // 點擊查看詳情按鈕
+            $(document).on('click', '.view-detail', function() {
+                const filename = $(this).closest('tr').data('filename');
+                if (filename) {
+                    $.get(`/get_history_detail/${filename}`, function(response) {
+                        if (response.success) {
+                            const output = response.output || '沒有輸出內容';
+                            const formattedOutput = ansiToHtml(output);
+                            // 使用陣列和 join 來避免模板字面量的縮進問題
+                            const html = [
+                                '<div style="font-family: monospace;">',
+                                '<p><strong>測試時間：</strong>', response.timestamp || 'N/A', '</p>',
+                                '<p><strong>測試網址：</strong>', response.target_url || 'N/A', '</p>',
+                                '<p><strong>測試項目：</strong>', response.selected_tests ? response.selected_tests.join(', ') : 'N/A', '</p>',
+                                '<p><strong>測試狀態：</strong>',
+                                response.success_status ? 
+                                    '<span class="badge bg-success">成功</span>' : 
+                                    '<span class="badge bg-danger">失敗</span>',
+                                '</p>',
+                                '<hr>',
+                                '<h6>測試輸出：</h6>',
+                                '<div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; white-space: pre; overflow-x: auto;">',
+                                formattedOutput,
+                                '</div>',
+                                '</div>'
+                            ].join('');
+                            $('#historyOutput').html(html);
+                            $('#historyDetail').show();
+                            // 滾動到詳情區域
+                            $('html, body').animate({
+                                scrollTop: $('#historyDetail').offset().top - 20
+                            }, 500);
+                        } else {
+                            alert('獲取詳情失敗: ' + (response.error || '未知錯誤'));
+                        }
+                    }).fail(function() {
+                        alert('請求失敗，請稍後再試');
+                    });
+                }
+            });
             // 初始化計數器
             updateSelectedCount();
             
