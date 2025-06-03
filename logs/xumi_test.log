@@ -688,3 +688,38 @@ NameError: name 'test_main' is not defined
 2025-06-03 14:47:03 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
 2025-06-03 14:47:03 - XUMI_TEST - INFO - 已保存測試結果到 test_20250603_144703.json
 2025-06-03 14:47:03 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'output': '\x1b[34m測試時間：2025-06-03 14:46\x1b[0m\n\x1b[34m測試帳號：joy09\x1b[0m\n\x1b[34m測試站台：https://xumi-demo9.sun.net.tw\x1b[0m\n測試：首頁-資訊安全政策\n\x1b[32m滾動到資訊安全政策成功\x1b[0m\n\x1b[32m進入資訊安全政策成功\x1b[0m\n回首頁\n測試：首頁-隱私權宣告\n\x1b[32m滾動到隱私權宣告成功\x1b[0m\n\x1b[32m進入隱私權宣告成功\x1b[0m\n回首頁\n', 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:46</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-資訊安全政策<br><span style="color: green">滾動到資訊安全政策成功</span><br><span style="color: green">進入資訊安全政策成功</span><br>回首頁<br>測試：首頁-隱私權宣告<br><span style="color: green">滾動到隱私權宣告成功</span><br><span style="color: green">進入隱私權宣告成功</span><br>回首頁<br></div>', 'stderr': '', 'returncode': 0}
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 收到測試請求
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 請求數據: {'target_url': 'https://xumi-demo9.sun.net.tw', 'selected_tests': ['test_security_policy', 'test_privacy_policy']}
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 測試網址: https://xumi-demo9.sun.net.tw
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 選擇的測試項目: ['test_security_policy', 'test_privacy_policy']
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 網址格式驗證通過: https://xumi-demo9.sun.net.tw
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 開始更新 .env 檔案...
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 找到現有的 .env 檔案，讀取內容...
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 讀取環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_USERNAME=joy09
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 讀取環境變數: XUMI_PASSWORD=j123456
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_EMAIL=yyytest@mailinator.com
+2025-06-03 14:56:15 - XUMI_TEST - DEBUG - 讀取環境變數: TEST_COURSE_NAME=自動化測試主課程
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 更新環境變數: BASE_URL=https://xumi-demo9.sun.net.tw
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 成功更新 .env 檔案
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 開始更新測試檔案: test_main.py
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 找到 22 個測試函數
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 沒有需要更新的測試函數
+2025-06-03 14:56:15 - XUMI_TEST - INFO - 開始執行測試...
+2025-06-03 14:56:41 - XUMI_TEST - INFO - 測試執行完成，返回碼: 0
+2025-06-03 14:56:41 - XUMI_TEST - INFO - 測試輸出:
+[34m測試時間：2025-06-03 14:52[0m
+[34m測試帳號：joy09[0m
+[34m測試站台：https://xumi-demo9.sun.net.tw[0m
+測試：首頁-資訊安全政策
+[32m滾動到資訊安全政策成功[0m
+[32m進入資訊安全政策成功[0m
+回首頁
+測試：首頁-隱私權宣告
+[32m滾動到隱私權宣告成功[0m
+[32m進入隱私權宣告成功[0m
+回首頁
+
+2025-06-03 14:56:41 - XUMI_TEST - WARNING - 測試完成後清理 WebDriver 時發生警告: cannot import name 'cleanup_drivers' from 'selenium_driver' (C:\Users\SGQA2\Desktop\Windsurf\sunnet_XUMI_tool\selenium_driver.py)
+2025-06-03 14:56:41 - XUMI_TEST - INFO - 已保存測試結果到 test_20250603_145641.json
+2025-06-03 14:56:41 - XUMI_TEST - INFO - 測試執行完成，結果: {'success': True, 'output': '\x1b[34m測試時間：2025-06-03 14:52\x1b[0m\n\x1b[34m測試帳號：joy09\x1b[0m\n\x1b[34m測試站台：https://xumi-demo9.sun.net.tw\x1b[0m\n測試：首頁-資訊安全政策\n\x1b[32m滾動到資訊安全政策成功\x1b[0m\n\x1b[32m進入資訊安全政策成功\x1b[0m\n回首頁\n測試：首頁-隱私權宣告\n\x1b[32m滾動到隱私權宣告成功\x1b[0m\n\x1b[32m進入隱私權宣告成功\x1b[0m\n回首頁\n', 'stdout': '<div style="font-family: monospace; white-space: pre-wrap;"><span style="color: blue">測試時間：2025-06-03 14:52</span><br><span style="color: blue">測試帳號：joy09</span><br><span style="color: blue">測試站台：https://xumi-demo9.sun.net.tw</span><br>測試：首頁-資訊安全政策<br><span style="color: green">滾動到資訊安全政策成功</span><br><span style="color: green">進入資訊安全政策成功</span><br>回首頁<br>測試：首頁-隱私權宣告<br><span style="color: green">滾動到隱私權宣告成功</span><br><span style="color: green">進入隱私權宣告成功</span><br>回首頁<br></div>', 'stderr': '', 'returncode': 0}
