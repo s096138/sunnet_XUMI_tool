@@ -144,7 +144,7 @@ def main():
     # test_footer(driver) # 頁尾分享
     # test_my_schedule(driver) #我的課表
     # test_study_record(driver) #學習紀錄
-    # test_calendar(driver) #行事曆
+    test_calendar(driver) #行事曆
     # test_school_qtn(driver) #問卷調查
     # test_personal_data(driver) #個人資料
     #-----------------------------------------------------------
