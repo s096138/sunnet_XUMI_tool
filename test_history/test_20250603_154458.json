@@ -1,9 +1,0 @@
-{
-  "timestamp": "2025-06-03 15:44:58",
-  "target_url": "https://xumi-demo9.sun.net.tw",
-  "selected_tests": [
-    "test_other_sites"
-  ],
-  "output": "\u001b[34m測試時間：2025-06-03 15:44\u001b[0m\n\u001b[34m測試帳號：joy09\u001b[0m\n\u001b[34m測試站台：https://xumi-demo9.sun.net.tw\u001b[0m\n測試：首頁-相關網站連結\n\u001b[32m滾動到相關網站連結成功\u001b[0m\n\u001b[31m點選相關網站連結失敗\u001b[0m\n\u001b[31m點選相關網站連結失敗\u001b[0m\n",
-  "success": true
-}

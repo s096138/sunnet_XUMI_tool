@@ -529,15 +529,31 @@ def run_tests():
                                       'fail' in stderr_content.lower() or
                                       'exception' in stderr_content.lower()))
                 
-                # 檢查輸出中是否包含 'WebDriver 錯誤' 字樣
-                has_webdriver_error = ('webdriver 錯誤' in stdout_content.lower() or 
-                                     'webdriver 錯誤' in stderr_content.lower())
+                # 檢查輸出中是否包含 WebDriver 相關錯誤
+                webdriver_error_phrases = [
+                    'webdriver 錯誤',
+                    'invalid session id',
+                    'session not found',
+                    'no such session',
+                    'session not created',
+                    'session timed out'
+                ]
                 
-                # 如果有 WebDriver 錯誤，則測試失敗
+                # 檢查標準輸出和錯誤輸出中是否包含任何 WebDriver 錯誤短語
+                has_webdriver_error = any(
+                    any(phrase.lower() in output.lower() for output in [stdout_content, stderr_content])
+                    for phrase in webdriver_error_phrases
+                )
+                
+                # 如果有任何類型的錯誤，則測試失敗
                 test_success = (not has_error_output and 
                               not has_failure_in_stdout and 
                               not has_webdriver_error and 
                               returncode == 0)
+                
+                # 記錄檢測到的錯誤類型（用於調試）
+                if has_webdriver_error:
+                    logger.warning(f"檢測到 WebDriver 錯誤: {stdout_content + stderr_content}")
                 
                 logger.info(f"測試成功狀態: {test_success}, 返回碼: {returncode}, "
                            f"錯誤輸出: {bool(stderr_content)}, 標準輸出包含失敗: {has_failure_in_stdout}")
