@@ -60,9 +60,7 @@ app.logger.handlers = logger.handlers
 app.logger.setLevel(logging.DEBUG)
 
 # 確保歷史紀錄目錄存在
-HISTORY_DIR = os.path.join(os.path.dirname(__file__), 'test_history')
-os.makedirs(HISTORY_DIR, exist_ok=True)
-HISTORY_DIR = os.path.join(os.path.dirname(__file__), 'test_history')
+HISTORY_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'test_history')
 os.makedirs(HISTORY_DIR, exist_ok=True)
 
 # 測試檔案名稱對照表
