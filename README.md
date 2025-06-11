@@ -6,11 +6,11 @@ AI數位學習系統「X.UMI」，這項創新平台結合人工智慧與教育�
 2025/06/02
 
 製作自動化測試控制介面
-後端框架: Python Flask
-前端框架: Bootstrap 5, jQuery
-自動化測試: Selenium WebDriver
-日誌系統: Python logging 模組
-依賴管理: requirements.txt
-環境變數: python-dotenv
+後端框架: Python Flask  
+前端框架: Bootstrap 5, jQuery  
+自動化測試: Selenium WebDriver  
+日誌系統: Python logging 模組  
+依賴管理: requirements.txt  
+環境變數: python-dotenv  
 
 以上使用Windsurf的SWE-1模型協助完成
